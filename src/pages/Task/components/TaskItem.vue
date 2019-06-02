@@ -4,15 +4,15 @@
       <span>
         <i
           :class="{
-            collected: task.isCollected,
-            'el-icon-star-on': task.isCollected,
-            'el-icon-star-off': !task.isCollected,
+            collected: task.favorited,
+            'el-icon-star-on': task.favorited,
+            'el-icon-star-off': !task.favorited,
           }"
         ></i>
         <span>项目id</span>
         <i class="el-icon-document"></i>
         <span style="margin-left: 12px;">
-          <el-tag size="mini" type="info"  v-for="tag in task.info0" :key="tag"> {{tag}} </el-tag>
+          <el-tag size="mini" type="info"  v-for="tag in task.components" :key="tag"> {{tag}} </el-tag>
         </span>
       </span>
       <span>

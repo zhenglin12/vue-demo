@@ -33,10 +33,10 @@ axios.interceptors.response.use(
   }
 );
 
-if (process.env.NODE_ENV === "development") {
-  require("mockjs");
-  require("./mock");
-}
+// if (process.env.NODE_ENV === "development") {
+//   require("mockjs");
+//   require("./mock");
+// }
 // 0. 如果使用模块化机制编程，导入Vue和VueRouter，要调用 Vue.use(VueRouter)
 Vue.use(VueRouter);
 
